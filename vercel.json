@@ -1,0 +1,12 @@
+{
+    "routes": [
+      {
+        "src": "/character/(.*)",
+        "dest": "/index.html"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/index.html"
+      }
+    ]
+  }
