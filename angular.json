@@ -16,7 +16,6 @@
             "outputPath": "dist/101479024-lab-test2-comp3133",
             "index": "src/index.html",
             "browser": "src/main.ts",
-            "prerender": false,
             "polyfills": [
               "zone.js"
             ],

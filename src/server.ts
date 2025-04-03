@@ -15,6 +15,18 @@ const app = express();
 const angularApp = new AngularNodeAppEngine();
 
 /**
+ * Example Express Rest API endpoints can be defined here.
+ * Uncomment and define endpoints as necessary.
+ *
+ * Example:
+ * ```ts
+ * app.get('/api/**', (req, res) => {
+ *   // Handle API request
+ * });
+ * ```
+ */
+
+/**
  * Serve static files from /browser
  */
 app.use(
@@ -24,15 +36,6 @@ app.use(
     redirect: false,
   }),
 );
-
-/**
- * 🚀 Fix: Disable Prerendering for Character Route
- */
-app.get('/character/:id', (req, res) => {
-  // Serve index.html to disable prerendering for this route
-  res.sendFile(resolve(browserDistFolder, 'index.html'));
-});
-
 
 /**
  * Handle all other requests by rendering the Angular application.
@@ -48,6 +51,7 @@ app.use('/**', (req, res, next) => {
 
 /**
  * Start the server if this module is the main entry point.
+ * The server listens on the port defined by the `PORT` environment variable, or defaults to 4000.
  */
 if (isMainModule(import.meta.url)) {
   const port = process.env['PORT'] || 4000;
@@ -57,6 +61,6 @@ if (isMainModule(import.meta.url)) {
 }
 
 /**
- * Request handler used by the Angular CLI (for dev-server and during build).
+ * Request handler used by the Angular CLI (for dev-server and during build) or Firebase Cloud Functions.
  */
 export const reqHandler = createNodeRequestHandler(app);
