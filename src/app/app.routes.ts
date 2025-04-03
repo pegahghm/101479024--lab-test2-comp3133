@@ -6,10 +6,13 @@ import { CharacterFilterComponent } from './characterfilter/characterfilter.comp
 const routes: Routes = [
     { path: '', redirectTo: 'characters', pathMatch: 'full' },  
     { path: 'characters', component: CharacterListComponent }, 
-    { path: 'character/:id', component: CharacterDetailsComponent },
+    {
+        path: 'character/:id',
+        component: CharacterDetailsComponent,
+        data: { renderMode: 'dynamic' } 
+    },
     { path: 'filter', component: CharacterFilterComponent },
-  ];
-  
-  export default routes;
-  export { routes };
-  
+];
+
+export default routes;
+export { routes };
