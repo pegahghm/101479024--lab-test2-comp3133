@@ -7,10 +7,8 @@ const routes: Routes = [
     { path: '', redirectTo: 'characters', pathMatch: 'full' },  
     { path: 'characters', component: CharacterListComponent }, 
     {
-        path: 'character/:id',
-        component: CharacterDetailsComponent,
-        data: { renderMode: 'dynamic' } 
-    },
+      path: 'character/:id',
+      component: CharacterDetailsComponent},
     { path: 'filter', component: CharacterFilterComponent },
 ];
 
