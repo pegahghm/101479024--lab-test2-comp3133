@@ -8,7 +8,9 @@ const routes: Routes = [
     { path: 'characters', component: CharacterListComponent }, 
     {
       path: 'character/:id',
-      component: CharacterDetailsComponent},
+      component: CharacterDetailsComponent,
+      data: { prerender: false }, 
+    },
     { path: 'filter', component: CharacterFilterComponent },
 ];
 
