@@ -1,0 +1,20 @@
+
+<div class="container">
+  <h2>Harry Potter Characters by House</h2>
+  <mat-form-field appearance="fill">
+    <mat-label>Select House</mat-label>
+    <mat-select [(value)]="selectedHouse" (selectionChange)="filterByHouse($event.value)">
+      <mat-option value="">All Houses</mat-option>
+      <mat-option *ngFor="let house of houses" [value]="house">{{ house }}</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <div class="character-grid">
+    <mat-card *ngFor="let character of filteredCharacters" class="character-card">
+      <img mat-card-image [src]="character.image" alt="{{ character.name }}">
+      <mat-card-title>{{ character.name }}</mat-card-title>
+      <mat-card-subtitle *ngIf="character.actor">Actor: {{ character.actor }}</mat-card-subtitle>
+      <mat-card-subtitle *ngIf="character.house">{{ character.house }}</mat-card-subtitle>
+    </mat-card>
+  </div>
+</div>

@@ -1,59 +1,47 @@
-# 101479024LabTest2Comp3133
+# Harry Potter Character Finder
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.3.
+# Overview:
+The Harry Potter Character Finder is an Angular web application that allows users to explore characters from the Harry Potter universe. Users can browse all characters, filter them by house, and view individual character details.
 
-## Development server
 
-To start a local development server, run:
+# FeaturesView All Characters: 
+Displays a list of all characters from the API.
 
-```bash
-ng serve
-```
+# Filter by House: 
+Select a Hogwarts house to view only the characters belonging to it.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+# Character Details: 
+Click on a character to view more information about them.
 
-## Code scaffolding
+# Tech StackFrontend: 
+Angular, TypeScript
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+# UI Components: 
+Angular Material
 
-```bash
-ng generate component component-name
-```
+# Backend API: 
+Harry Potter API
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+# Installation & SetupPrerequisites:  
+Ensure you have Node.js and Angular CLI installed:
+npm install -g @angular/cliClone the Repositorygit clone https://github.com/your-username/harry-potter-app.git
+cd harry-potter-appInstall Dependenciesnpm installRun the Applicationng serveThen open http://localhost:4200/ in your browser.
+Project Structure/src
+  ├── app
+  │   ├── components
+  │   │   ├── character-list  # Displays all characters
+  │   │   ├── character-filter  # Filter characters by house
+  │   │   ├── character-detail  # Shows details of a selected character
+  │   ├── services
+  │   │   ├── harry-potter.service.ts  # Fetches data from API
+  │   ├── app.module.ts
+  ├── assets  # Images, styles, etc.
+  ├── styles.css  # Global styles
+  
+# API Endpoints Used
+Get all characters: /characters
+Get characters by house: /house/{house}
+Get character by ID: /character/{id}
 
-```bash
-ng generate --help
-```
 
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+# Pegah Ghods Mohammadi

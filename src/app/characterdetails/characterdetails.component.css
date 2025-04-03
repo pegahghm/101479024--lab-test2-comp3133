@@ -1,0 +1,81 @@
+/* General container and layout */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh;
+    background-color: #dababa;
+  }
+  
+  /* Character details layout */
+  .character-details {
+    display: flex;
+    flex-direction: row;
+    background-color: #cb8f8f;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 80%;
+    max-width: 900px;
+    padding: 20px;
+    gap: 30px;
+  }
+  
+  /* Image styling */
+  .character-image {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Image hover effect */
+  .character-image:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Details section */
+  .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  /* Text styling */
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #461203;
+  }
+  
+  p {
+    font-size: 1em;
+    margin: 5px 0;
+    color: #ffffff;
+  }
+  
+  strong {
+    color: #333;
+  }
+  
+  /* Wand details section */
+  .wand {
+    margin-top: 20px;
+    padding-left: 20px;
+    border-left: 3px solid #ccc;
+  }
+  
+  /* Loading template */
+  ng-template#loading {
+    text-align: center;
+    font-size: 1.2em;
+    color: #555;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  

@@ -1,0 +1,85 @@
+/* General container */
+.container {
+  padding: 20px;
+  text-align: center;
+  background-color: #dababa;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #461203;
+}
+
+/* Title styling */
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.house-option{
+  color: #461203;
+}
+
+/* Character grid layout using CSS Grid */
+.character-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+/* Individual character card styling */
+.character-card {
+  width: 100%;
+  max-width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #cb8f8f;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+/* Card hover effect */
+.character-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Image styling */
+mat-card-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Card title and subtitle styling */
+mat-card-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+mat-card-subtitle {
+  font-size: 1rem;
+  color: #666;
+  margin: 5px 0;
+}
+
+.house-filter {
+  width: 100%;
+  max-width: 300px; 
+  margin: 10px auto; 
+  display: flex;
+}
+
+.house-filter mat-form-field {
+  color: #461203;
+  border-radius: 8px; 
+}
+
+.house-filter mat-select {
+  font-size: 16px; 
+}
+

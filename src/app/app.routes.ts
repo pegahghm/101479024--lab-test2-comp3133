@@ -1,3 +1,15 @@
 import { Routes } from '@angular/router';
+import { CharacterListComponent } from './characterlist/characterlist.component';
+import { CharacterDetailsComponent } from './characterdetails/characterdetails.component';
+import { CharacterFilterComponent } from './characterfilter/characterfilter.component';
 
-export const routes: Routes = [];
+const routes: Routes = [
+    { path: '', redirectTo: 'characters', pathMatch: 'full' },  
+    { path: 'characters', component: CharacterListComponent }, 
+    { path: 'character/:id', component: CharacterDetailsComponent },
+    { path: 'filter', component: CharacterFilterComponent },
+  ];
+  
+  export default routes;
+  export { routes };
+  
